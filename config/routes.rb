@@ -1,6 +1,6 @@
 ColombiaRents::Application.routes.draw do
   get "colombia_rents/principal"
-  get "static_pages/home"
+  get "colombia_rents/acerca"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

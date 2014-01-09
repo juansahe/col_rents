@@ -1,44 +1,55 @@
 <header>
 	<!-- Navbar-->
 	<div class="navbar-wrapper">
-		<div class="container">
-			<div class="navbar navbar-inverse">
-				<div class="navbar-inner">
-					<!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
-		            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-		            	<span class="icon-bar"></span>
-		              	<span class="icon-bar"></span>
-		              	<span class="icon-bar"></span>
-		            </button>
-					<%= link_to "Colombia Rents", root_path, class: "brand" %>
-					<div class="nav-collapse collapse">
-						<ul class="nav">
-							<li class="active"><%= link_to t(:start), root_path %></li>
-	                		<li><%= link_to t(:who_we_are), about_path %></li>
-	                		<li><%= link_to t(:contact), contact_path %></li>
-	                		<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:rents) %><b class="caret"></b></a>
-	                			<ul class="dropdown-menu">
-	                				<li class="nav-header"><%= t(:lodging) %></li>
-	                    			<li><%= link_to t(:apartments), '#' %></li>
-	                    			<li><%= link_to t(:islands), '#' %></li>
-	                    			<li><%= link_to t(:houses), '#' %></li>
-	                    			<li class="divider"></li>
-	                    			<li class="nav-header"><%= t(:make_it_fun) %></li>
-	                    			<li><%= link_to t(:boats), '#' %></li>
-	                    			<li><%= link_to t(:yachts), '#' %></li>
-	                    			<li><%= link_to t(:cars), '#' %></li>
-	                    			<li><%= link_to t(:tours), '#' %></li>
-	                    		</ul>
-	                    	</li>
-	                    	<li><%= link_to t(:sign_up), signup_path %></li>
-	                    </ul>
-	                </div>
-	            </div>
-	        </div>
-	    </div> 
-	</div>
+      <div class="container">
+        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <%= link_to "Colombia Rents", root_path, class: "navbar-brand" %>
+            </div>
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li class="active"><%= link_to t(:start), root_path %></li>
+                <li><%= link_to t(:who_we_are), about_path %></li>
+                <li><%= link_to t(:contact), contact_path %></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:rents) %><b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                  	<li class="dropdown-header"><%= t(:lodging) %></li>
+                    <li><%= link_to t(:apartments), '#' %></li>
+                    <li><%= link_to t(:islands), '#' %></li>
+                    <li><%= link_to t(:houses), '#' %></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header"><%= t(:make_it_fun) %></li>
+                    <li><%= link_to t(:boats), '#' %></li>
+                    <li><%= link_to t(:yachts), '#' %></li>
+                    <li><%= link_to t(:cars), '#' %></li>
+                    <li><%= link_to t(:tours), '#' %></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+              	<li><%= link_to t(:sign_up), signup_path %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 	<!-- Carousel-->
-    <div id="myCarousel" class="carousel slide">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    	<!-- Indicators -->
+    	<ol class="carousel-indicators">
+        	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        	<li data-target="#myCarousel" data-slide-to="1"></li>
+        	<li data-target="#myCarousel" data-slide-to="2"></li>
+      	</ol>
     	<div class="carousel-inner">
     		<div class="item active">
     			<%= image_tag("img/slide-01.jpg", alt: "Colombia Rents") %>
@@ -46,7 +57,7 @@
     				<div class="carousel-caption">
 	              		<h1>Example headline.</h1>
 	              		<p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	             	 	<a class="btn btn-large btn-primary" href="#">Sign up today</a>
+	             	 	<a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a>
 	            	</div>
           		</div>
         	</div>
@@ -56,7 +67,7 @@
             		<div class="carousel-caption">
 		              <h1>Another example headline.</h1>
 		              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		              <a class="btn btn-large btn-primary" href="#">Learn more</a>
+		              <a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a>
             		</div>
           		</div>
         	</div>
@@ -66,12 +77,12 @@
            	 		<div class="carousel-caption">
 		              <h1>One more for good measure.</h1>
 		              <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-		              <a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+		              <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
             		</div>
           		</div>
         	</div>
       	</div>
-      	<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      	<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      	<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
 </header>

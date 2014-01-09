@@ -1,12 +1,12 @@
 class ColombiaRentsController < ApplicationController
   
-  def principal
+  def main
   end
 
-  def acerca
+  def about
   end
 
-  def contacto
+  def contact
   end
 
 end

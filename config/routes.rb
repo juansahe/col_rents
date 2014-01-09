@@ -1,7 +1,10 @@
 ColombiaRents::Application.routes.draw do
-  get "colombia_rents/principal"
-  get "colombia_rents/acerca"
-  get "colombia_rents/contacto"
+  get "users/new"
+  root  'colombia_rents#main'
+  match '/about',      to: 'colombia_rents#about',    via:'get'
+  match '/contact',    to: 'colombia_rents#contact',  via:'get'
+  match '/signup',     to: 'users#new',               via:'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

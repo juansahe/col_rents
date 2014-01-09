@@ -2,51 +2,31 @@ require 'spec_helper'
 
 describe "Colombia Rents" do
 
-  describe "Principal" do
+  subject { page }
+
+  describe "Main" do
+    before { visit root_path }
     
-    it "should have the content 'Colombia Rents'" do
-      visit '/colombia_rents/principal'
-      expect(page).to have_content('Colombia Rents')
-    end
-
-    it "should have the base title" do
-    	visit '/colombia_rents/principal'
-    	expect(page).to have_title('Colombia Rents | Alquiler de Inmuebles en Cartagena Colombia')
-    end
-
-    it "should not have a custom title" do
-    	visit '/colombia_rents/principal'
-    	expect(page).not_to have_title('| Inicio')
-    end
+    it { should have_content('Colombia Rents') }
+    it { should have_title(full_title('')) }
+    it { should_not have_title('| Inicio') }
 
   end
 
-  describe "Who we are" do
+  describe "About" do
+    before { visit about_path }
   	
-  	it "should have the content 'Quienes Somos'" do
-  		visit '/colombia_rents/acerca'
-  		expect(page).to have_content('Quienes Somos')
-  	end
+  	it { should have_content('Quienes Somos') }
+    it { should have_title('Quienes Somos') }
 
-  	it "should have the title 'Quienes Somos'" do
-  		visit '/colombia_rents/acerca'
-  		expect(page).to have_title('Quienes Somos')
-  	end
-  	
   end
 
   describe "Contact" do
+    before { visit contact_path }
   	
-  	it "should have the content 'Contacto'" do
-  		visit '/colombia_rents/contacto'
-  		expect(page).to have_content('Contacto')
-  	end
+    it { should have_content('Contacto') }
+    it { should have_title('Contacto') }
 
-  	it "should have the title 'Contacto'" do
-  		visit '/colombia_rents/contacto'
-  		expect(page).to have_title('Contacto')
-  	end
-  
   end
 
 end

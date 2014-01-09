@@ -4,12 +4,12 @@
 		<div class="container">
 			<div class="navbar navbar-inverse">
 				<div class="navbar-inner">
-					<%= link_to "Colombia Rents", '#', class: "brand" %>
+					<%= link_to "Colombia Rents", root_path, class: "brand" %>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li class="active"><%= link_to t(:start), '#' %></li>
-	                		<li><%= link_to t(:who_we_are), '#' %></li>
-	                		<li><%= link_to t(:contact), '#' %></li>
+							<li class="active"><%= link_to t(:start), root_path %></li>
+	                		<li><%= link_to t(:who_we_are), about_path %></li>
+	                		<li><%= link_to t(:contact), contact_path %></li>
 	                		<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:rents) %><b class="caret"></b></a>
 	                			<ul class="dropdown-menu">
 	                				<li class="nav-header"><%= t(:lodging) %></li>
@@ -24,6 +24,7 @@
 	                    			<li><%= link_to t(:tours), '#' %></li>
 	                    		</ul>
 	                    	</li>
+	                    	<li><%= link_to t(:sign_up), signup_path %></li>
 	                    </ul>
 	                </div>
 	            </div>

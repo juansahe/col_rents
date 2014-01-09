@@ -19,24 +19,24 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
   #menu:
-  start: Start
-  who_we_are: Who we Are
-  contact: Contact Us
-  rents: For Rent
-  apartments: Apartments
-  islands: Private Islands
-  houses: Houses
-  boats: Boats
-  yachts: Yachts
-  cars: Vehicles
-  tours: Tours
-  lodging: Lodging
-  make_it_fun: Make it Fun
+  start: Incio
+  who_we_are: Quienes Somos
+  contact: Contactanos
+  rents: Para Alquiler
+  apartments: Apartamentos
+  islands: Islas Privadas
+  houses: Casas
+  boats: Botes
+  yachts: Yates
+  cars: Vehiculos
+  tours: Toures
+  lodging: Hospedaje
+  make_it_fun: Diversión
 
   #footer
-  back_to_top: Back to Top
+  back_to_top: Regresar al Principio
   company: 2014 Colombia Rents Ltda.
-  privacy: Privacy
-  terms: Terms
+  privacy: Politica de Renta
+  terms: Terminos y Condiciones

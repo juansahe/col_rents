@@ -1,5 +1,5 @@
 ColombiaRents::Application.routes.draw do
-  get "users/new"
+  resources :users
   root  'colombia_rents#main'
   match '/about',      to: 'colombia_rents#about',    via:'get'
   match '/contact',    to: 'colombia_rents#contact',  via:'get'

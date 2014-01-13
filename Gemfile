@@ -12,6 +12,7 @@ gem 'http_accept_language'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'

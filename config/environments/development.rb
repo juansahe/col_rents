@@ -27,6 +27,6 @@ ColombiaRents::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   
-  #ImageMagick path on development IOS
+  #ImageMagick path on development OSX
   Paperclip.options[:command_path] = "/usr/local/bin/ImageMagick/"
 end

@@ -1,9 +1,6 @@
 require 'spec_helper'
 
 describe User do
-<<<<<<< HEAD
-  pending "add some examples to (or delete) #{__FILE__}"
-=======
   
   before do
      @user = User.new(name: "Example User", email: "user@example.com", password: "foobar", password_confirmation:"foobar")
@@ -96,5 +93,4 @@ describe User do
        specify { expect(user_with_invalid_password).to be_false }
      end
    end
->>>>>>> ed0ccfa7b95e253220737f8b8d85e2eb14282e2d
 end

@@ -6,8 +6,28 @@ describe "User Pages" do
 	describe "SignUp page" do
 		before { visit signup_path }
 
-		it { should have_content('Registrarse') }
-		it { should have_title(full_title('Registrarse')) }
+		let(:submit) { "Create my account" }
+
+		it { should have_content('Sign Up') }
+		it { should have_title(full_title('Sign Up')) }
+
+		describe "with invalid credentials" do
+			it "should not create a user" do
+				expect { click_button submit }.not_to change(User, :count)
+			end
+		end
+
+		describe "with valid credentials" do
+			before do
+				fill_in "Name", 			with:"Example User"
+				fill_in "Email", 			with:"user@example.com"
+				fill_in "Password", 		with:"foobar"
+				fill_in "Confirmation", 	with:"foobar"
+			end
+			it "should create a user" do
+				expect { click_button submit }.to change(User, :count).by(1)
+			end
+		end
 	end
   
   describe "profile page" do
@@ -17,4 +37,6 @@ describe "User Pages" do
     it { should have_content(user.name) }
     it { should have_title(user.name) }
   end
+
+
 end

@@ -20,24 +20,28 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  #menu:
-  start: Start
-  who_we_are: Who we Are
-  contact: Contact Us
-  rents: For Rent
-  apartments: Apartments
-  islands: Private Islands
-  houses: Houses
-  boats: Boats
-  yachts: Yachts
-  cars: Vehicles
-  tours: Tours
-  lodging: Lodging
-  make_it_fun: Make it Fun
-  sign_up: Sign Up
-
-  #footer
-  back_to_top: Back to Top
-  company: 2014 Colombia Rents Ltda.
-  privacy: Privacy
-  terms: Terms
+  views:
+    layouts:
+      header:
+        colrents_title: Colombia Rents | Property Rent in Cartagena Colombia
+        navbar:
+          start: Start
+          who_we_are: Who We Are
+          contact: Contact Us
+          rents: For Rent
+          apartments: Apartments
+          islands: Private Islands
+          houses: Homes
+          boats: Boats
+          yachts: Yachts
+          cars: Vehicules
+          tours: Tours
+          lodging: Lodging
+          make_it_fun: Fun
+      footer:
+        back_to_top: Back to top
+        company: 2014 Colombia Rents Ltda.
+        privacy: Privacy
+        terms: Terms and Conditions
+    users:
+      sign_up: Sign Up

@@ -15,27 +15,27 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><%= link_to t(:start), root_path %></li>
-                <li><%= link_to t(:who_we_are), about_path %></li>
-                <li><%= link_to t(:contact), contact_path %></li>
+                <li class="active"><%= link_to t('views.layouts.header.navbar.start'), root_path %></li>
+                <li><%= link_to t('views.layouts.header.navbar.who_we_are'), about_path %></li>
+                <li><%= link_to t('views.layouts.header.navbar.contact'), contact_path %></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t(:rents) %><b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%= t('views.layouts.header.navbar.rents') %><b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                  	<li class="dropdown-header"><%= t(:lodging) %></li>
-                    <li><%= link_to t(:apartments), '#' %></li>
-                    <li><%= link_to t(:islands), '#' %></li>
-                    <li><%= link_to t(:houses), '#' %></li>
+                  	<li class="dropdown-header"><%= t('views.layouts.header.navbar.lodging') %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.apartments'), '#' %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.islands'), '#' %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.houses'), '#' %></li>
                     <li class="divider"></li>
-                    <li class="dropdown-header"><%= t(:make_it_fun) %></li>
-                    <li><%= link_to t(:boats), '#' %></li>
-                    <li><%= link_to t(:yachts), '#' %></li>
-                    <li><%= link_to t(:cars), '#' %></li>
-                    <li><%= link_to t(:tours), '#' %></li>
+                    <li class="dropdown-header"><%= t('views.layouts.header.navbar.make_it_fun') %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.boats'), '#' %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.yachts'), '#' %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.cars'), '#' %></li>
+                    <li><%= link_to t('views.layouts.header.navbar.tours'), '#' %></li>
                   </ul>
                 </li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-              	<li><%= link_to t(:sign_up), signup_path %></li>
+              	<li><%= link_to t('views.users.sign_up'), signup_path %></li>
               </ul>
             </div>
           </div>

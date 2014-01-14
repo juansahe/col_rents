@@ -2,7 +2,7 @@ module ApplicationHelper
 
   # Returns the full title on a per-page basis.
   def full_title(page_title)
-    base_title = "Colombia Rents | Alquiler de Inmuebles en Cartagena Colombia"
+    base_title =  t('views.layouts.header.colrents_title')
     if page_title.empty?
       base_title
     else

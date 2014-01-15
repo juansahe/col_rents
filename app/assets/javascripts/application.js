@@ -16,4 +16,4 @@
 //= require holder
 //= require custom
 //= require turbolinks
-//= require modal-blur
+//= require_tree .

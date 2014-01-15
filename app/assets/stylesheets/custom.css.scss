@@ -4,6 +4,12 @@ $grayMediumLight: #eaeaea;
 
 /* universal */
 
+.blur {
+    -webkit-filter: blur(5px) grayscale(50%);
+}
+
+/* forms */
+
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -41,10 +47,10 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
 }
-
-.navbar-right {
-  padding-right: 30px;
-}  
+.button-signup {
+	padding: 10px;
+	padding-right: 40px;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 

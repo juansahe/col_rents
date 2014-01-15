@@ -6,7 +6,7 @@ GIT
 
 GIT
   remote: git://github.com/thoughtbot/paperclip.git
-  revision: eb75c08d4a68c3ff2d0a3fba19587fa24acce772
+  revision: f6f5ea1bd0b41dbbc1d030cf8290cb0f775e770a
   specs:
     paperclip (3.5.2)
       activemodel (>= 3.0.0)
@@ -236,7 +236,7 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    turbolinks (2.1.0)
+    turbolinks (2.2.0)
       coffee-rails
     tzinfo (0.3.38)
     uglifier (2.1.1)

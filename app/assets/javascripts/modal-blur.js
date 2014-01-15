@@ -1,4 +1,3 @@
-/* blur on modal open, unblur on close */
 $('#myModal').on('show.bs.modal', function () {
    $('.container').addClass('blur');
 });

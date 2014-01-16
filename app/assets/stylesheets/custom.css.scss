@@ -9,6 +9,15 @@ $grayMediumLight: #eaeaea;
   -webkit-transform: translate3d(0, 0, 0);
 }
 
+/* Error messages */
+.error_explanation {
+  ul {
+    margin-left:20px;
+    margin-bottom:20px;
+    line-height: 25px;
+  }
+}
+
 /* forms */
 
 

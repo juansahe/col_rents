@@ -45,3 +45,21 @@ en:
         terms: Terms and Conditions
     users:
       sign_up: Sign Up
+      create_account: Create Account
+      close: Close
+    error:
+      message: Oh! oh! - let's check 
+      error_msg:
+        zero: none
+        one: "this error:"
+        other: "these %{count} errors:"  
+  #Active record Translations
+  activerecord:
+    attributes:
+      user:
+        name: Name
+        email: Email
+        password: Password
+        password_confirmation: Password Confirmation
+  errors: &errors
+    format: '%{attribute} -> %{message}'

@@ -1,0 +1,12 @@
+<% if @user.errors.any? %>
+  <div class="error_explanation">
+    <div class="alert alert-danger">
+      <%= t('views.error.message') %> <%= t('views.error.error_msg', :count => @user.errors.count ) %>
+    </div>
+    <ul class="list-unstyled">
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><span class="label label-danger"><%= msg %></span></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>

@@ -36,7 +36,7 @@
               </ul>
               <ul class="nav navbar-nav navbar-right">
               	<div class="button-signup">
-					<li><%= link_to t('views.users.sign_up'), signup_path, remote: true, class: "btn btn-warning", role: "button", data: { :toggle => "modal", :target => "#SignUpModal" } %></li>
+					<li><%= link_to t('views.users.sign_up'), new_user_path, remote: true, class: "btn btn-warning", role: "button", data: { :toggle => "modal", target: "#SignUpModal" } %></li>
 				</div>
               </ul>
             </div>
@@ -88,3 +88,4 @@
       <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
 </header>
+<div id="SignUpModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>

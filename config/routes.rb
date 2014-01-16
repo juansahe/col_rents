@@ -3,7 +3,6 @@ ColombiaRents::Application.routes.draw do
   root  'colombia_rents#main'
   match '/about',      to: 'colombia_rents#about',    via:'get'
   match '/contact',    to: 'colombia_rents#contact',  via:'get'
-  match '/signup',     to: 'users#new',               via:'get'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,1 +1,2 @@
-$("#SignUpModal").html("<%= escape_javascript(render('shared/signmodal', object:@user )) %>")
+$("#SignUpModal").html("<%= escape_javascript(render('shared/signmodal')) %>")
+$("#SignUpModal").modal("show")

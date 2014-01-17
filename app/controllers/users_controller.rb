@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   		if @user.save
-  			flash[:success] = "Welcome!"
+  			flash[:success] = t('views.users.welcome')
   			#redirect_to @user
         render js: "window.location = '#{user_path(@user)}'"
   		else

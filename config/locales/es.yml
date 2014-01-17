@@ -47,6 +47,7 @@ es:
       create_account: Crear Cuenta
       close: Cerrar
       sign_up: Registrarse
+      welcome: Bienvenido a Colombia Rents!
     error:
       message: Oh! oh! - revisemos 
       error_msg:

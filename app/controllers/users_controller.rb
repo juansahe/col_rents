@@ -11,12 +11,10 @@ class UsersController < ApplicationController
   	@user = User.new(user_params)
   		if @user.save
   			flash[:success] = "Welcome!"
-  			redirect_to @user
+  			#redirect_to @user
+        render js: "window.location = '#{user_path(@user)}'"
   		else
-  			respond_to do |format|
-  				format.html { render 'new' }
-  				format.js 	{ render action: 'new'}
-  			end
+        render 'new'
   		end
   end
 

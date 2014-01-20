@@ -48,6 +48,8 @@ es:
       close: Cerrar
       sign_up: Registrarse
       welcome: Bienvenido a Colombia Rents!
+      log_in: Iniciar Sesión
+      new_user_: No estas registrado?
     error:
       message: Oh! oh! - revisemos 
       error_msg:

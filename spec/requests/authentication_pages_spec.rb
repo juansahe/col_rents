@@ -6,14 +6,19 @@ describe "Authentication" do
 	describe "signin page" do
 		before { visit signin_path }
 
-		it { should have_title('Sign In') }
-		it { should have_content('Sign In') }
+		it { should have_title('Log In') }
+		it { should have_content('Log In') }
     
     describe "with invalid credentials" do
       before { click_button "Log In" }
       
       it { should have_title('Log In') }
       it { should have_selector('div.alert.alert-error') }
+
+      describe "after visiting another page" do
+        before { click_link "Start" }
+        it { should_not have_selector('div.alert.alert-error') }
+      end
     end
     
     describe "with valid credentials" do

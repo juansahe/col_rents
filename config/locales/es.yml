@@ -49,7 +49,10 @@ es:
       sign_up: Registrarse
       welcome: Bienvenido a Colombia Rents!
       log_in: Iniciar Sesión
+      log_out: Cerrar Sesión
       new_user_: No estas registrado?
+      bad_credentials: Email y/o contraseña erroneos!
+      profile: Configuración
     error:
       message: Oh! oh! - revisemos 
       error_msg:

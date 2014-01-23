@@ -49,7 +49,10 @@ en:
      close: Close
      welcome: Welcome to Colombia Rents!
      log_in: Log In
+     log_out: Log Out
      new_user_: New User?
+     bad_credentials: Invalid email/password combination!
+     profile: Profile
    error:
      message: Oh! oh! - let's check
      error_msg:

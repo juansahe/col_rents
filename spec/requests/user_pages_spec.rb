@@ -22,10 +22,10 @@ describe "User Pages" do
 
 		describe "with valid credentials" do
 			before do
-				fill_in "Name", 			with:"Example User"
-				fill_in "Email", 			with:"user@example.com"
-				fill_in "Password", 		with:"foobar"
-				fill_in "Confirmation", 	with:"foobar"
+				fill_in "Name", 			              with:"Example User"    
+				fill_in "user_email", 			        with:"user@example.com" 		    
+				fill_in "user_password", 		        with:"foobar"
+				fill_in "Confirmation", 	          with:"foobar"
 			end
 			it "should create a user" do
 				expect { click_button submit }.to change(User, :count).by(1)
@@ -35,7 +35,8 @@ describe "User Pages" do
 				before { click_button submit }
 				let(:user_signed) {User.find_by(email: 'user@example.com') }
 
-				it { should have_title(user_signed.name) }
+				it { should have_link('Log Out') }
+        it { should have_title(user_signed.name) }
 				it { should have_selector('div.alert.alert-success', text: 'Welcome') }
 			end
 		end
@@ -48,6 +49,4 @@ describe "User Pages" do
     it { should have_content(user.name) }
     it { should have_title(user.name) }
   end
-
-
 end

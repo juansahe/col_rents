@@ -1,0 +1,45 @@
+<% provide(:title, t('views.users.edit')) %>
+<!-- SignUp Alone -->
+<div class="modal-dialog">
+	<div class="modal-content">
+		<div class="modal-header">
+			<h3><%= t('views.users.update') %></h3>
+		</div>
+		<div class="modal-body">
+			<%= form_for @user, html: { class: "form-horizontal", role: "form" } do |f| %>
+				<%= render 'shared/error_messages' %>
+				<div class="form-group">
+					<%= f.label :name, class: "col-sm-3 control-label" %>
+					<div class="col-sm-8">
+						<%= f.text_field :name, class:"form-control", placeholder: t('activerecord.attributes.user.name') %>
+					</div>
+				</div>
+				<div class="form-group">
+		      		<%= f.label :email, class: "col-sm-3 control-label" %>
+					<div class="col-sm-8">
+		      			<%= f.text_field :email, class: "form-control", placeholder: t('activerecord.attributes.user.email') %>
+					</div>
+				</div>
+				<div class="form-group">
+		      		<%= f.label :password, class: "col-sm-3 control-label" %>
+					<div class="col-sm-8">
+		      			<%= f.password_field :password, class: "form-control", placeholder: t('activerecord.attributes.user.password') %>
+					</div>
+				</div>
+				<div class="form-group">
+		      		<%= f.label :password_confirmation, class: "col-sm-3 control-label" %>
+					<div class="col-sm-8">
+		      			<%= f.password_field :password_confirmation, class: "form-control", placeholder: t('activerecord.attributes.user.password_confirmation') %>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<div class="form-group">
+						<div class="col-sm-11">
+							<%= f.submit t('views.users.update_account'), class: "btn btn-success", id:"create_user_btn" %>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

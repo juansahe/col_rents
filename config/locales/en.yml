@@ -45,14 +45,21 @@ en:
        terms: Terms and Conditions
    users:
      sign_up: Sign Up
+     edit: Edit user
+     update: Update your profile
      create_account: Create Account
+     update_account: Save Changes
      close: Close
      welcome: Welcome to Colombia Rents!
+     updated: Profile Updated!
+     no_permit: 'Nah ah ah!. Log in first...'
+     no_correct: "Check your ID card, you're not you anymore..."
      log_in: Log In
      log_out: Log Out
      new_user_: New User?
      bad_credentials: Invalid email/password combination!
      profile: Profile
+     settings: Settings
    error:
      message: Oh! oh! - let's check
      error_msg:

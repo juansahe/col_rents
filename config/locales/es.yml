@@ -45,14 +45,21 @@ es:
         terms: Terminos y Condiciones
     users:
       create_account: Crear Cuenta
+      update_account: Actualizar
       close: Cerrar
       sign_up: Registrarse
+      edit: Editar usuario
+      update: Actualiza tu información
       welcome: Bienvenido a Colombia Rents!
+      no_permit: 'Nah ah ah!. Primero hay que iniciar sesión...'
+      no_correct: "Revisa tu CC, ya no eres quien crees que eres..."
+      updated: Perfil Actualizado!
       log_in: Iniciar Sesión
       log_out: Cerrar Sesión
       new_user_: No estas registrado?
       bad_credentials: Email y/o contraseña erroneos!
-      profile: Configuración
+      profile: Perfil
+      settings: Configuración
     error:
       message: Oh! oh! - revisemos 
       error_msg:
